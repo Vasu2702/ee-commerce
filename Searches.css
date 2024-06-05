@@ -1,0 +1,30 @@
+.product-categories {
+    display: flex; /* Arrange buttons horizontally */
+    justify-content: flex-start; /* Distribute evenly with spacing */
+    margin-bottom: 20px;
+    margin-top: 1px; /* Optional spacing below buttons */
+  }
+  
+  .category-button {
+    background-color: white; /* Light gray background */
+    border: 1px solid silver; /* Black border */
+    padding: 10px 20px; /* Inner padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Indicate clickable button */
+    margin: 5px;
+    font-weight: bold
+    ;
+
+  }
+  @media screen and (max-width: 768px) {
+    .product-categories {
+      flex-direction: column; /* Change flex direction to stack buttons vertically */
+      align-items: flex-start; /* Align buttons to the start (left) */
+    }
+  
+    .category-button {
+      width: 100%; /* Make buttons full width */
+      margin: 5px 0; /* Adjust margin to separate buttons vertically */
+    }
+  }
+  

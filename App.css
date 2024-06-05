@@ -1,0 +1,59 @@
+.similar-products {
+  position: relative;
+  padding: 20px;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: flex-start; /* Align items to the start (left) */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.heading-container h1 {
+  margin: 0;
+}
+
+.search-bar-container {
+  position: relative; /* Make the container relatively positioned */
+}
+
+.search-bar {
+  width: calc(100% - 40px); /* Adjust the width to match the container width */
+  padding: 10px 30px 10px 40px; /* Adjust padding to make space for the icon */
+  border: 1px solid #ddd;
+  border-radius: 20px; /* Rounded corners */
+  margin-top: 20px;
+}
+
+.search-icon {
+  position: absolute; /* Position the icon absolute */
+  left: 10px; /* Adjust the position of the icon */
+  top: 67%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
+  color: #999; /* Color of the icon */
+}
+@media screen and (max-width: 768px) {
+  .heading-container {
+    justify-content: center; /* Center items horizontally */
+    margin-bottom: 10px; /* Reduce margin bottom for smaller screens */
+  }
+
+  .heading-container h1 {
+    font-size: 1.5em; /* Decrease font size for smaller screens */
+  }
+
+  .search-bar-container {
+    width: 100%; /* Make the search bar container full width */
+  }
+
+  .search-bar {
+    width: calc(100% - 20px); /* Adjust width to fill the container */
+    padding: 10px; /* Reduce padding for smaller screens */
+    margin-top: 10px; /* Reduce margin top for smaller screens */
+  }
+
+  .search-icon {
+    left: 5px; /* Adjust the position of the icon */
+  }
+}
